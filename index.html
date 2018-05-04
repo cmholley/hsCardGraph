@@ -61,7 +61,7 @@ d3.json("graph.json", function(error, graph) {
           .on("end", dragended));
 
   circ.append("title")
-      .text(function(d) { return d.id; });
+      .text(function(d) { return d.desc; });
 
   // var nodeLabel = node.append("text")        
   //       .attr("dx", function(d) { return -d.radius })
